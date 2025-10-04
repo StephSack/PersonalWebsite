@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .resume-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .resume-content {
+            flex: 1;
+        }
+
+        .headshot {
+            width: 150px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="resume-container">
+            <div class="resume-content">
+                <h2>My Resume</h2>
+                <p>Below is my resume embedded for easy viewing.</p>
+                <iframe src="../Job Resources/Sack, Stephanie_Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+            <img src="images/headshot.JPG" alt="Stephanie Sack's Headshot" class="headshot">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Stephanie Sack</p>
+    </footer>
+</body>
+</html>
