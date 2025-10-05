@@ -123,6 +123,26 @@ img {
     background-color: #218838; /* Darker green for hover effect */
 }
 
+/* Updated styling to stack the images vertically and fit each one to the screen */
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+    gap: 20px;
+}
+
+.image-gallery .project-image {
+    width: 100%; /* Fit each image to the screen */
+    height: auto;
+}
+
+/* Switched the arrow direction to point upward */
+.image-gallery .arrow {
+    font-size: 2em;
+    color: #28a745; /* Green theme */
+    transform: rotate(-90deg); /* Point arrow up */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {

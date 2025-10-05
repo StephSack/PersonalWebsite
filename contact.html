@@ -29,7 +29,8 @@
             <p>Phone: 631-553-7497</p>
             <p>Email: <a href="mailto:spsack@iu.edu">spsack@iu.edu</a></p>
 
-            <form action="thankyou.html" method="post">
+            <!-- Updated the form to be vertical and added validation and accessibility features -->
+            <form action="thankyou.html" method="post" style="display: flex; flex-direction: column; gap: 15px;">
                 <label for="first-name">First Name:</label>
                 <input type="text" id="first-name" name="first-name" required>
 
@@ -43,7 +44,7 @@
                 <input type="password" id="password" name="password" minlength="8" required>
 
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" minlength="8" required pattern=".{8,}" oninput="checkPasswordMatch()">
+                <input type="password" id="confirm-password" name="confirm-password" minlength="8" required oninput="checkPasswordMatch()">
 
                 <span id="password-error" style="color: red; display: none;">Passwords do not match.</span>
 
