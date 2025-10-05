@@ -143,6 +143,32 @@ img {
     transform: rotate(-90deg); /* Point arrow up */
 }
 
+/* Added styling for the green box and hover effect for the GitHub repo button */
+.github-repo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.repo-box {
+    background-color: #28a745; /* Green background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.repo-box:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.repo-button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
